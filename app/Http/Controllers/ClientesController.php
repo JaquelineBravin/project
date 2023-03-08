@@ -9,6 +9,17 @@ class ClientesController extends Controller
 {
     public function __invoke()
     {
-        return view('clientes');
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $endereco = $_POST['endereco'];
+        $nasc = $_POST['nasc'];
+
+        $dados = [
+            'nome'=>$nome,
+            'email'=>$email,
+            'endereco'=>$endereco,
+            'nasc'=>$nasc
+        ];
+        return view('clientes', $dados);
     }
 }

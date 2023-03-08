@@ -7,12 +7,6 @@
     <title>Clientes</title>
 </head>
 <body>
-    <?php 
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $endereco = $_POST['endereco'];
-        $nasc = $_POST['nasc'];
-    ?>
 
     <table>
         <tr>
@@ -22,10 +16,10 @@
             <th>NASCIMENTO</th>
         </tr>
         <tr>
-            <td><?php echo $nome ?></td>
-            <td><?php echo $email ?></td>
-            <td><?php echo $endereco ?></td>
-            <td><?php echo $nasc ?></td>
+            <td>{{$nome}}</td>
+            <td>{{$email}}</td>
+            <td>{{$endereco}}</td>
+            <td>{{$nasc}}</td>
         </tr>
     </table>
 </body>
