@@ -24,6 +24,6 @@ Route::get('/sobre/{page?}', function($pagina = null) {
 }
 );
 
-Route::get('/cadastro', CadastroController::class);
+Route::get('/cadastro', [CadastroController::class,'create']);
 
 Route::post('/clientes', ClientesController::class);
